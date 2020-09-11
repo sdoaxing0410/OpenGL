@@ -18,6 +18,12 @@ void processInput(GLFWwindow *window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
+void init(void)
+{
+    // Specifiy the vertices for two triangles
+    vec2 = 
+}
+
 int main()
 {
     // glfw: initialize and configure
