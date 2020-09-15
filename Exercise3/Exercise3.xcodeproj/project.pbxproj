@@ -12,7 +12,9 @@
 		86369CA2250A1F4C00AAD446 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 86369CA1250A1F4C00AAD446 /* glad.c */; };
 		86369CA4250A21F900AAD446 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86369CA3250A21F900AAD446 /* libGLEW.2.1.0.dylib */; };
 		86369CA6250A237D00AAD446 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 86369CA5250A237D00AAD446 /* libglfw.3.3.dylib */; };
-		86369CA9250A243D00AAD446 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 86369CA7250A243D00AAD446 /* main.cpp */; };
+		869948E0250F448F0060C1BE /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 869948DE250F448F0060C1BE /* glm.cpp */; };
+		869948E32510461D0060C1BE /* OpenGLDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 869948E12510461D0060C1BE /* OpenGLDemo.cpp */; };
+		869948E82510467D0060C1BE /* trackball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 869948E52510467D0060C1BE /* trackball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +36,16 @@
 		86369CA1250A1F4C00AAD446 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		86369CA3250A21F900AAD446 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0_1/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
 		86369CA5250A237D00AAD446 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		86369CA7250A243D00AAD446 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		869948DE250F448F0060C1BE /* glm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glm.cpp; sourceTree = "<group>"; };
+		869948DF250F448F0060C1BE /* glm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glm.h; sourceTree = "<group>"; };
+		869948E12510461D0060C1BE /* OpenGLDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLDemo.cpp; sourceTree = "<group>"; };
+		869948E22510461D0060C1BE /* OpenGLDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLDemo.h; sourceTree = "<group>"; };
+		869948E42510467D0060C1BE /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
+		869948E52510467D0060C1BE /* trackball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trackball.cpp; sourceTree = "<group>"; };
+		869948EA2510A8230060C1BE /* gc_tex.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gc_tex.obj; sourceTree = "<group>"; };
+		869948EB2510AA2D0060C1BE /* bunny.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
+		869948EC2510AE300060C1BE /* puget_tex.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = puget_tex.obj; sourceTree = "<group>"; };
+		869948ED2510B4770060C1BE /* puget_tex.ppm */ = {isa = PBXFileReference; lastKnownFileType = file; path = puget_tex.ppm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +84,16 @@
 			isa = PBXGroup;
 			children = (
 				86369CA1250A1F4C00AAD446 /* glad.c */,
-				86369CA7250A243D00AAD446 /* main.cpp */,
+				869948DF250F448F0060C1BE /* glm.h */,
+				869948DE250F448F0060C1BE /* glm.cpp */,
+				869948E12510461D0060C1BE /* OpenGLDemo.cpp */,
+				869948E22510461D0060C1BE /* OpenGLDemo.h */,
+				869948E52510467D0060C1BE /* trackball.cpp */,
+				869948E42510467D0060C1BE /* trackball.h */,
+				869948EC2510AE300060C1BE /* puget_tex.obj */,
+				869948EA2510A8230060C1BE /* gc_tex.obj */,
+				869948EB2510AA2D0060C1BE /* bunny.obj */,
+				869948ED2510B4770060C1BE /* puget_tex.ppm */,
 			);
 			path = Exercise3;
 			sourceTree = "<group>";
@@ -145,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86369CA9250A243D00AAD446 /* main.cpp in Sources */,
+				869948E0250F448F0060C1BE /* glm.cpp in Sources */,
+				869948E32510461D0060C1BE /* OpenGLDemo.cpp in Sources */,
+				869948E82510467D0060C1BE /* trackball.cpp in Sources */,
 				86369CA2250A1F4C00AAD446 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
